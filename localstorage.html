@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="local_storage_app">
+   <head>
+        
+        <title>Local Storage</title>
+        
+    </head>
+    <body ng-controller="quizAppController as qac">
+        <h1>Local Storage</h1>
+        <h2>Current LocalStorage value is = <em>{{qac.latestData()}}</em></h2> 
+        <h3>Student's Lists</h3>
+        <ul>
+            <li ng-repeate="student in qac.students">
+                {{student.list}}
+            </li>
+        </ul>
+        <script src="angular.min.js"></script>
+        <script src="localstorageapp.js"></script>
+        </body>
+        </html>
